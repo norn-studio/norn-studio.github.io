@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Space Grotesk";
-  src: url("fonts/SpaceGrotesk.ttf") format("truetype");
+  src: url("fonts-SpaceGrotesk.ttf") format("truetype");
   font-weight: 300 700;
   font-style: normal;
   font-display: swap;
@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("fonts/JetBrainsMono.ttf") format("truetype");
+  src: url("fonts-JetBrainsMono.ttf") format("truetype");
   font-weight: 100 800;
   font-style: normal;
   font-display: swap;
@@ -574,6 +574,27 @@ strong { font-weight: 600; }
   font-size: 0.875rem;
 }
 
+/* EASA: the logbook model the app follows, right under the opening. */
+.easa-grid { display: grid; grid-template-columns: auto 1fr; gap: 40px; align-items: center; }
+.easa-badge {
+  display: grid; place-items: center; align-content: center; gap: 6px;
+  width: 190px; aspect-ratio: 1; border-radius: 50%;
+  border: 3px solid var(--band-accent); color: var(--band-accent);
+}
+.easa-mark { font-size: 2.6rem; font-weight: 800; letter-spacing: 0.06em; line-height: 1; }
+.easa-ref { font-family: var(--mono); font-size: 1.35rem; font-weight: 700; }
+.easa .note { color: var(--band-text-2); margin-top: 18px; font-size: 0.85rem; }
+@media (max-width: 720px) {
+  .easa-grid { grid-template-columns: 1fr; gap: 24px; }
+  .easa-badge { width: 130px; }
+  .easa-mark { font-size: 1.8rem; }
+}
+
+/* The films of the app's Help: 9:16 pages of their own (phone, caption). */
+.films { grid-auto-columns: minmax(220px, 270px); }
+.film-frame { aspect-ratio: 9 / 16; border-radius: 22px; }
+.film-frame video { display: block; width: 100%; height: 100%; object-fit: cover; background: var(--card); }
+
 .shot figcaption {
   margin-top: 10px;
   font-size: 0.9375rem;
@@ -586,8 +607,8 @@ strong { font-weight: 600; }
 .plans {
   display: grid;
   gap: 16px;
-  max-width: 780px;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  max-width: 1040px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
 }
 
 .plan {
