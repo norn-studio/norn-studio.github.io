@@ -3,8 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Apps</title>
-<link rel="icon" href="stage10/favicon.png">
+<title>NorN Studio — Apps</title>
+<meta name="description" content="NorN Studio makes iPhone and iPad apps: Flare, the EASA pilot logbook, and Stage10.">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://norn-studio.github.io/">
+<meta property="og:site_name" content="NorN Studio">
+<meta property="og:title" content="NorN Studio">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://norn-studio.github.io/">
+<meta property="og:image" content="https://norn-studio.github.io/norn-logo.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "NorN Studio",
+  "alternateName": "NorN",
+  "url": "https://norn-studio.github.io/"
+}
+</script>
 <style>
 :root{--bg:#F2F5FF;--panel:#fff;--ink:#1B2150;--soft:#6B7399;--line:#E1E6F6;--a:#4F5BFF}
 @media (prefers-color-scheme:dark){:root{--bg:#0D1130;--panel:#171D4A;--ink:#EEF1FF;--soft:#9EA7DA;--line:#2A3372;--a:#6A74FF}}
@@ -12,7 +31,10 @@
 body{margin:0;min-height:100vh;color:var(--ink);background:var(--bg);line-height:1.5;
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif}
 .wrap{max-width:760px;margin:0 auto;padding:40px 16px 56px}
-h1{font-size:32px;margin:0 0 24px}
+.brand{display:flex;align-items:center;gap:16px;margin:0 0 28px}
+.brand img{width:72px;height:72px;flex:none}
+h1{font-size:32px;margin:0;line-height:1.1}
+.brand p{margin:4px 0 0;color:var(--soft)}
 .app{display:flex;align-items:center;gap:16px;background:var(--panel);border:1px solid var(--line);
   border-radius:20px;padding:16px;margin-bottom:12px;color:var(--ink);text-decoration:none}
 .app:hover{border-color:var(--a)}
@@ -25,13 +47,16 @@ h1{font-size:32px;margin:0 0 24px}
 </head>
 <body>
 <div class="wrap">
-<h1>Apps</h1>
+<header class="brand">
+  <img src="norn-logo.png" alt="" width="72" height="72">
+  <div><h1>NorN Studio</h1><p>Apps for iPhone and iPad</p></div>
+</header>
 <a class="app" href="stage10/">
   <img src="stage10/icon.png" alt="" width="64" height="64">
   <div><strong>Stage10</strong><span>Reflexes under pressure</span></div>
 </a>
 <a class="app" href="flare/">
-  <img src="flare/assets/img/app-icon.png" alt="" width="64" height="64">
+  <img src="flare/assets/img-app-icon.png" alt="" width="64" height="64">
   <div><strong>Flare</strong><span>EASA pilot logbook</span></div>
 </a>
 <p class="foot"><a href="impressum.html">Impressum</a></p>
