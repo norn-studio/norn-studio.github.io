@@ -362,6 +362,14 @@ strong { font-weight: 600; }
   color: var(--text-2);
 }
 
+.platform-line {
+  margin: 6px 0 0;
+  font-size: 0.9375rem;
+  color: var(--text-2);
+}
+
+.pricing-store + .platform-line { margin-top: 12px; }
+
 /* The home screen of the app, drawn as in docs/mockups (figures are fictitious). */
 
 .instrument {
