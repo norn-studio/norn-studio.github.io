@@ -3,7 +3,7 @@ var CONTACT_EMAIL = "norn.studio.apps@gmail.com";
 var CONTACT_FORM = "https://docs.google.com/forms/d/e/1FAIpQLScGI2VwQ3sWAGgD0bl2WnBrR35zjhjE9cLilvflQnE8iDHhoQ/viewform"; /* lien du formulaire de contact (Google Forms) */
 /* ====== Liens des stores (à remplir le jour J01) ======
    Un bouton n'apparaît que si son lien est rempli. Si les deux sont vides, le site affiche « Bientôt… ». */
-var APP_STORE_URL = ""; /* ex. https://apps.apple.com/app/id1234567890 (numéro « Apple ID » dans App Store Connect > Infos sur l'app) */
+var APP_STORE_URL = "https://apps.apple.com/app/id6828022244"; /* ex. https://apps.apple.com/app/id1234567890 (numéro « Apple ID » dans App Store Connect > Infos sur l'app) */
 var PLAY_URL = "https://play.google.com/store/apps/details?id=io.github.norn_studio.stage10";
 var OWNER = ["Yohann Mingam", "Kronprinzenstraße 43", "57250 Netphen", "Deutschland"];
 /* ======================================================== */
